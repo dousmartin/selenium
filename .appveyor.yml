@@ -1,0 +1,15 @@
+image: Ubuntu
+
+stack: jdk 11
+
+branches:
+  only:
+    - master
+
+build: off
+
+install:
+  - chmod +x gradlew
+
+build_script:
+  - ./gradlew test --info
